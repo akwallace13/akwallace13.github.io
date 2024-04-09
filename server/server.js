@@ -6,6 +6,8 @@ const pool = require('./db.js')
 
 app.use(cors())
 
+
+
 //get puzzle(s)
 app.get('/food_and_drink', async (req, res) => {
     //const userEmail = 'test@test.com'

@@ -1,4 +1,4 @@
-import ListHeader from "./components/ListHeader";
+import ListHeader from "./components/index/HomePage";
 import { useEffect } from "react";
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <ListHeader listName={'Holiday Tick List'}/>
+      <ListHeader listName={'Hang-Ten'}/>
     </div>
   )
 }
