@@ -35,4 +35,28 @@ const wordList = [
     {
         word: "mountain"
     },
+    {
+        word: "flower"
+    },
+    {
+        word: "column"
+    },
+    {
+        word: "ghost"
+    },
+    {
+        word: "detail"
+    },
+    {
+        word: "muscle"
+    },
+    {
+        word: "check"
+    },
+    {
+        word: "language"
+    },
+    {
+        word: "common"
+    }
 ]

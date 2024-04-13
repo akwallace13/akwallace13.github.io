@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 
-<!--<html>
+<html>
     <head>
-        
+        <!--Tab Name-->
         <title>Hang-Ten</title>
 
+        <!--style sheet reference-->
+        <link href="/client/src/components/Homepage.css" rel="stylesheet">
         
-        <link href="/client/components/Homepage.css" rel="stylesheet">
-        
-    
-        <h1>Hang-Ten</h1>
+        <!--Header-->
+        <div class="logo">
+            <img src="/client/src/components/GameImages/Logo.png">
+        </div>
 
         <style>
             body {
                 margin: 0;
-                padding: 0;
                 font-family: Arial, Helvetica, sans-serif;
             }
             nav {
@@ -34,15 +35,18 @@
                 color: black;
             }
             nav a:hover {
-                color: teal;
+                color: turquoise;
+            }
+            .logo {
+                max-height: 50px;
             }
         </style>
 
-        
+        <!--Navigation Bar-->
         <nav className="Nav-buttons">
             <ul class="nav_links">
                 <li><a href="/client/src/components/userlogin.html">Login</a></li>
-                <li><a href="#">Create Account</a></li>
+                <li><a href="/client/src/components/createaccount.html">Create Account</a></li>
                 <li><a href="#">How to Play</a></li>
             </ul>
         </nav>
@@ -53,6 +57,7 @@
             nav.gameButtons {
                 text-align: center;
                 font-size: 40px;
+                padding-top: 150px;
             }
             nav.gameButtons ul li {
                 background-color: teal;
@@ -64,16 +69,16 @@
                 color: whitesmoke;
             }
         </style>
-       
+        <!--Game play buttons-->
         <nav class="gameButtons">
             <ul>
-                <li className="Word-button"><a href="#">Word</a></li>
-                <li className="Phrase-button"><a href="#">Phrase</a></li>
-                <li className="Place-button"><a href="#">Place</a></li>
-                <li className="Job-button"><a href="#">Job</a></li>
-                <li className="FoodAndDrink-button"><a href="#">Food and Drink</a></li>
-                <li className="Random-button"><a href="#">Random</a></li>
+                <li className="Word-button"><a href="/client/src/components/WordGame.html">Word</a></li>
+                <li className="Phrase-button"><a href="/client/src/components/PhraseGame.html">Phrase</a></li>
+                <li className="Place-button"><a href="/client/src/components/PlaceGame.html">Place</a></li>
+                <li className="Job-button"><a href="/client/src/components/JobGame.html">Job</a></li>
+                <li className="FoodAndDrink-button"><a href="/client/src/components/FoodAndDrinkGame.html">Food and Drink</a></li>
+                <li className="Random-button"><a href="/client/src/components/RandomGame.html">Random</a></li>
             </ul>
         </nav>
     </body>
-</html>-->
+</html>
