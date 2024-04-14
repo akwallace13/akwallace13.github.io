@@ -1,32 +1,73 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    display: inline;
     background-color: white;
-    padding: 10px 10px;
 }
 
-.heading {
+head{
+    display: flex;
     width: 100%;
-    align-self: start;
 }
+
+header {
+    padding: 0;
+    width: 100%
+}
+
+nav {
+    padding: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    padding: 5px;
+}
+
+section {
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: turquoise;
+}
+
+.logo {
+    max-height: 50px;
+}
+
 
 .content {
     width: 100%;
     background-color: white;
-    display: flex;
-    gap: 70px;
-    align-items: flex-end;
-    padding: 60px 40px;
+    display: fixed;
+    gap: 10px;
+    padding: 10px 40px;
+    padding-top: 3%;
     border-radius: 10px;
+}
+
+.hangman-box {
+    padding: 0;
 }
 
 .hangman-box img {
@@ -54,8 +95,7 @@ body{
     display: flex;
     gap: 10px;
     list-style: none;
-    align-items: center;
-    justify-content: center;
+    padding-left: 250px;
 }
 
 .game-box {
@@ -72,7 +112,12 @@ body{
     gap: 5px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 10px;
+}
+
+.keyboard {
+    max-width: 600px;
+    padding-left: 40px;
 }
 
 .keyboard button {
@@ -109,17 +154,16 @@ body{
     height: 100%;
     opacity: 0;
     pointer-events: none;
-    z-index: 999;
     background: gray;
-    display: flex;
+    display: fixed;
     align-items: center;
     justify-content: center;
     transition: opacity 0.4s ease;
-    padding: 0 10px;
+    padding-top: 150px;
 }
 
 .game-modal img {
-    max-width: 180px;
+    max-width: 300px;
     margin-bottom: 20px;
 }
 
@@ -130,8 +174,8 @@ body{
 
 .game-modal .content {
     color: white;
-    max-width: 420px;
-    width: 80%;
+    max-width: 80%;
+    width: 100%;
     text-align: center;
     border-radius: 10px;
     background-color: gray;
@@ -139,11 +183,11 @@ body{
 }
 
 .game-modal h4 {
-    font-size: 1.53rem;
+    font-size: 2.25rem;
 }
 
 .game-modal p {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     margin: 15px 0 30px;
     font-weight: 500;
 }
@@ -156,6 +200,7 @@ body{
 .game-modal button {
     padding: 12px 23px;
     background-color: whitesmoke;
+    font-size: 1;
 }
 
 .game-modal button:hover {
@@ -169,7 +214,7 @@ body{
 @media (max-width: 782px) {
     .container {
         flex-direction: column;
-        padding: 30px 15px;
+        padding: 10px 15px;
         align-items: center;
     }
     .hangman-box img {
@@ -180,17 +225,12 @@ body{
     }
 }
 
-.logo {
-    max-height: 50px;
-    position: relative;
-}
-
 .game-area {
-    padding-inline-start: 10px;
+    width: 80%;
+    display: fixed;
+    padding: 0;
 }
 
-.header {
-    padding: 0;
-    align-self: start;
-    padding-left: 0;
+.guesses-text {
+    padding-left: 15px;
 }

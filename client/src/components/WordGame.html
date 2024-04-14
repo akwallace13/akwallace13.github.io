@@ -10,81 +10,53 @@
         <script src="/client/src/components/testwords.js" defer></script>
         <script src="/client/src/components/Games.js" defer></script>
         
-        <!--Header-->
-        <div class="header">
-            <div class="logo">
-                <a href="/client/src/components/Homepage.html"><img src="/client/src/components/GameImages/Logo.png"></a>
-            </div>
 
-            <style>
-                body {
-                    margin: 0;
-                    font-family: Arial, Helvetica, sans-serif;
-                }
-                nav {
-                    color: white;
-                    text-align: right;
-                    padding: 5px;
-                    padding-left: 450px;
-                }
-                nav ul {
-                    list-style: none;
-                }
-                nav ul li {
-                    display: inline-block;
-                    padding: 5px 10px;
-                }
-                nav a {
-                    text-decoration: none;
-                    color: black;
-                }
-                nav a:hover {
-                    color: turquoise;
-                }
-                .logo {
-                    max-height: 50px;
-                }
-            </style>
-
-            <!--Navigation Bar-->
-            <nav className="Nav-buttons">
-                <ul class="nav_links">
-                    <li><a href="/client/src/components/userlogin.html">Login</a></li>
-                    <li><a href="/client/src/components/createaccount.html">Create Account</a></li>
-                    <li><a href="#">How to Play</a></li>
-                </ul>
-            </nav>
-        </div>
     </head>
 
     <body>
-        <div class="game-area">
-            <div class="game-modal">
-                <div class="content">
-                    <img src="/client/src/components/GameImages/ripwhite.gif" alt="gif">
-                    <h4>GAME OVER!</h4>
-                    <p>The correct answer was: <b>gsasd</b></p>
-                    <button href="/client/src/components/WordGame.html" class="play-again">Play Again</button>
-                    <!--<button href="/client/src/components/Homepage.html" class="play-new">Play A Different Game</button>-->
-                </div>
-            </div>        
-
-            <div class="game-box">
-                <div class="content">
-                    <div class="hangman-box">
-                        <img src="/client/src/components/GameImages/empty.png">
-                    </div>
-                </div>
-
-                <h4 class="guesses-text">
-                    Incorrect guesses:
-                    <b>0 / 10</b>
-                </h4>
-
-                <ul class="word-display"></ul>
-            
-                <div class="keyboard"></div>
+        <header>
+            <div className="logo">
+                <a href="/client/src/components/index.html"><img src="/client/src/components/GameImages/Logo.png"></a>
             </div>
-        </div>
+        </header>
+
+        <nav className="Nav-buttons">
+            <ul class="nav_links">
+                <li><a href="/client/src/components/userlogin.html">Login</a></li>
+                <li><a href="/client/src/components/createaccount.html">Create Account</a></li>
+                <li><a href="#">How to Play</a></li>
+            </ul>
+        </nav>
+
+        <section>   
+            <div class="game-area">
+                <div class="game-modal">
+                    <div class="content">
+                        <img src="/client/src/components/GameImages/ripwhite.gif" alt="gif">
+                        <h4>GAME OVER!</h4>
+                        <p>The correct answer was: <b>gsasd</b></p>
+                        <button href="/client/src/components/WordGame.html" class="play-again">Play Again</button>
+                        <!--<button href="/client/src/components/Homepage.html" class="play-new">Play A Different Game</button>-->
+                    </div>
+                </div>        
+
+                <div class="game-box">
+                    <div class="content">
+                        <div class="hangman-box">
+                            <img src="/client/src/components/GameImages/empty.png">
+                        </div>
+                    </div>
+
+                    <h4 class="guesses-text">
+                        Incorrect guesses:
+                        <b>0 / 10</b>
+                    </h4>
+
+                    <ul class="word-display"></ul>
+                
+                    <div class="keyboard"></div>
+                </div>
+            </div>
+        </section> 
     </body>
 </html>

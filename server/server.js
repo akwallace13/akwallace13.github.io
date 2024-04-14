@@ -7,7 +7,7 @@ const pool = require('./db.js')
 app.use(cors())
 
 //get puzzle(s)
-// app.get('/food', async (req, res) => {
+// app.get('client/src/components/FoodAndDrinkGame.html', async (req, res) => {
 //     //const userEmail = 'test@test.com'
 //     //res.send('food and drink test')
 //     try {
@@ -18,7 +18,7 @@ app.use(cors())
 //     }
 // })
 
-// app.get('/job', async (req, res) => {
+// app.get('client/src/components/JobGame.html', async (req, res) => {
 //     //const userEmail = 'test@test.com'
 //     //res.send('food and drink test')
 //     try {
@@ -29,7 +29,7 @@ app.use(cors())
 //     }
 // })
 
-// app.get('/phrase', async (req, res) => {
+// app.get('client/src/components/PhraseGame.html', async (req, res) => {
 //     //const userEmail = 'test@test.com'
 //     //res.send('food and drink test')
 //     try {
@@ -40,7 +40,7 @@ app.use(cors())
 //     }
 // })
 
-// app.get('/place', async (req, res) => {
+// app.get('client/src/components/PlaceGame.html', async (req, res) => {
 //     //const userEmail = 'test@test.com'
 //     //res.send('food and drink test')
 //     try {
@@ -51,7 +51,7 @@ app.use(cors())
 //     }
 // })
 
-// app.get('/random', async (req, res) => {
+// app.get('client/src/components/RandomGame.html', async (req, res) => {
 //     //const userEmail = 'test@test.com'
 //     //res.send('food and drink test')
 //     try {
@@ -62,13 +62,13 @@ app.use(cors())
 //     }
 // })
 
-app.get('/WordGame', async (req, res) => {
+app.get('/client/src/components/WordGame.html', async (req, res) => {
     //res.send('test')
     //const userEmail = 'test@test.com'
     //res.send('food and drink test')
     try {
         //await
-    const word_puzzles = await pool.query('SELECT * FROM word_puzzles')
+    const word_puzzles = await pool.query('SELECT * FROM word_puzzles') //WHERE user_email = $1', [userEmail])
     res.json(word_puzzles.rows)
     } catch (err) {
         console.error(error)
