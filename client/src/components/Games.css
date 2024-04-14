@@ -16,15 +16,18 @@ head{
 
 header {
     padding: 0;
-    width: 100%
+    width: 100%;
+    align-items: center;
+    text-align: center;
 }
 
 nav {
     padding: 0;
     width: 100%;
     color: white;
-    text-align: left;
+    text-align: center;
     padding: 5px;
+    align-items: center;
 }
 
 section {
@@ -95,7 +98,7 @@ nav a:hover {
     display: flex;
     gap: 10px;
     list-style: none;
-    padding-left: 250px;
+    padding-left: 380px;
 }
 
 .game-box {
@@ -228,9 +231,10 @@ nav a:hover {
 .game-area {
     width: 80%;
     display: fixed;
-    padding: 0;
+    gap: 10px;
+    padding: 10px 40px;
 }
 
 .guesses-text {
-    padding-left: 15px;
+    padding-left: 75px;
 }
