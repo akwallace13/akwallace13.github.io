@@ -1,7 +1,7 @@
 {
   "name": "capstonehangten",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is meant as a means of entertainment. It is a mix between hangten, wordle and wheel of fortune. There are multiple game categories to play, and from those, player statistics can be analyzed if they have an account. Users will be able to see their win-lose ratio and the average number of guesses it takes to solve a puzzle, as well as the total number of puzzles played.",
   "scripts": {
     "build": "If-env TYPE=server && (cd server && npm install) || (cd client && npm install)",
     "server": "node ./server/server.js",
@@ -9,5 +9,10 @@
   },
   "dependencies": {
     "if-env": "^1.0.4"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

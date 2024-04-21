@@ -1,11 +1,11 @@
 CREATE DATABASE capstonehangten;
 
-CREATE TABLE users (
-    user_id VARCHAR(250) PRIMARY KEY,
-    user_email VARCHAR(250),
-    user_name VARCHAR(250),
-    user_age INT,
-    hashed_password VARCHAR(250)
+CREATE TABLE userss (
+    id VARCHAR(250) PRIMARY KEY NOT NULL,
+    email VARCHAR(250) NOT NULL,
+    name VARCHAR(250) NOT NULL,
+    hashed_password VARCHAR(250) NOT NULL,
+    UNIQUE (email)
 );
 
 CREATE TABLE summary (
